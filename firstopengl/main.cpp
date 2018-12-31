@@ -39,16 +39,39 @@ int main()
     glViewport(0,0,600,600);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     
-    float vertices[] =
+//    float vertices[] =
+//    {
+//        -0.5f,-0.5f,0.0f,
+//        0.5f,-0.5f,0.0f,
+//        0.0f,0.5f,0.0f
+//    };
+  float vertices[] =
     {
-        -0.5f,-0.5f,0.0f,
+        0.5f,0.5f,0.0f,
         0.5f,-0.5f,0.0f,
-        0.0f,0.5f,0.0f
+        -0.5f,-0.5f,0.0f,
+        -0.5f,0.5f,0.0f
     };
+
+
     
     unsigned int my_traingle_vao;
     glGenVertexArrays(1,&my_traingle_vao);
     glBindVertexArray(my_traingle_vao);
+    
+    
+    unsigned int indices[]=
+    {
+        0,1,3,
+        1,2,3
+    };
+    unsigned int my_ebo;
+    glGenBuffers(1,&my_ebo);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,my_ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER,sizeof(indices),indices,GL_STATIC_DRAW);
+    
+    
+    
     unsigned int my_traingle_vbo;
     glGenBuffers(1,&my_traingle_vbo);
     
@@ -115,11 +138,16 @@ int main()
     {
         glUseProgram(shaderProgram);
         glBindVertexArray(my_traingle_vao);
+        //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,my_ebo);
+        
         glClearColor(0.2f,0.3f,0.3f,1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        glDrawArrays(GL_TRIANGLES,0,3);
+        glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
+        //glDrawArrays(GL_TRIANGLES,0,3);
+        glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
         
+        glBindVertexArray(0);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
