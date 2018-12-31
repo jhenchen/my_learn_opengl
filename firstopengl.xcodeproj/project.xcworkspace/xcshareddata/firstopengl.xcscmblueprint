@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "28CF9FA1D8E1E337965A5280D0D3432253F6A5E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "28CF9FA1D8E1E337965A5280D0D3432253F6A5E7" : 9223372036854775807,
+    "F91D28A7E95E8F0399C74826E40B332B63E48E1C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3B214175-086C-4A1F-A2A3-5B463432548A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "28CF9FA1D8E1E337965A5280D0D3432253F6A5E7" : "firstopengl\/",
+    "F91D28A7E95E8F0399C74826E40B332B63E48E1C" : "..\/glfw"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "firstopengl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "firstopengl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jhenchen\/my_learn_opengl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28CF9FA1D8E1E337965A5280D0D3432253F6A5E7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/glfw\/glfw.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F91D28A7E95E8F0399C74826E40B332B63E48E1C"
+    }
+  ]
+}
